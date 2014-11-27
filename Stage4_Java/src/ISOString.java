@@ -41,12 +41,12 @@ public class ISOString {
     	 try {
              @SuppressWarnings("deprecation")
  			HttpClient send = new DefaultHttpClient();        
-            HttpPost post = new HttpPost(this.apiURL);        
+            HttpPost post = new HttpPost("http://challenge.code2040.org/api/validatetime");        
   
              post.setEntity(new StringEntity("{\"token\":\"" + this.token + "\" , \"datestamp\":\"" + finalISO + "\"}", ContentType.create("application/json")));
   
              HttpResponse response = send.execute(post);
-             System.out.println("Status: "+ response.getStatusLine());
+             System.out.println("Status: "+ response.getStatusLine().getStatusCode());
          }
          catch(IOException e) {
              System.out.println(e);
