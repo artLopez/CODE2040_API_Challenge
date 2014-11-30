@@ -9,8 +9,6 @@
  * 
  * 
  * Author: Arturo Lopez
- * ID:2412
- * Date: October 1, 2014
  */
 
 public class StageIV {
