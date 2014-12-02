@@ -25,7 +25,7 @@ def findDate(year,month,day,date):
         else:
             ctr += 1
 
-year  = int(year)
+    year  = int(year)
     month = int(month)
     day   = int(day)
     
@@ -43,7 +43,7 @@ def findTime(hrs,minutes,sec,time):
         else:
             ctr += 1
 
-hrs     = int(hrs)
+    hrs     = int(hrs)
     minutes = int(minutes)
     sec     = int(sec)
     
@@ -111,7 +111,7 @@ def leapYear_30Month(dateChange,dateList,timeChange,timeList):
             print 'Is leap year', leapYear
             days += 1
 
-print 'total years', total_years
+    print 'total years', total_years
     days += total_years * -4
     print days
     
@@ -130,8 +130,8 @@ print 'total years', total_years
                 dateList[1] = (dateList[1] - months) + 12
                 dateList[0] -= 1
                 dateList[2] -= days_left
-else:
-    dateList[2] -= days
+    else:
+        dateList[2] -= days
 
 #sets the print format
 def printFormat(dateList,timeList):
