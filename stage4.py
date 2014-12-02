@@ -3,7 +3,6 @@ import json
 import iso8601
 import calendar
 import datetime
-from collections import deque
 
 def findIntervalTime(interval,years,months,days,hours,minutes,seconds):
     minutes, seconds = divmod(interval,60)
@@ -196,7 +195,6 @@ def main():
     datestamp = r.json()['result']['datestamp']
     
     print str(datetime.timedelta(seconds=interval))
-    
     
     date = datestamp[:10]
     print 'Date' ,date
