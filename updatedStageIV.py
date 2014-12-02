@@ -20,10 +20,10 @@ def main():
     datestamp = r.json()['result']['datestamp']
 
     #parse the datestamp
-    year  = int(datestamp[:4])
-    month = int(datestamp[5:7])
-    day   = int(datestamp[8:10])
-    hours = int(datestamp[11:13])
+    year    = int(datestamp[:4])
+    month   = int(datestamp[5:7])
+    day     = int(datestamp[8:10])
+    hours   = int(datestamp[11:13])
     minutes = int(datestamp[14:16])
     seconds = int(datestamp[17:19])
     microSec = int(datestamp[20:23])
